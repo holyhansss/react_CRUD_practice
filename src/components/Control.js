@@ -12,10 +12,10 @@ class Subject extends Component {
                 e.preventDefault();
                 this.props.onChangeMode('update');
             }.bind(this)}>update</li>
-            <li onClick={function(e){
+            <li><input onClick={function(e){
                 e.preventDefault();
                 this.props.onChangeMode('delete');
-            }.bind(this)} input='button' value="delete">delete</li>
+            }.bind(this)} type='button' value="delete"></input></li>
         </ul>
       );
     }
